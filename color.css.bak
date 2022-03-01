@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+*{
+	margin:0;
+	padding:0;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  	align-items: center;
+	justify-content:center;
+	min-height:100vh;
+
+}
+
+main {
+  height: 100vh;
+  transition: background 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transition: color 1s;
+}
+
+footer {
+  text-align: center;
+  background-color: #eaeaea90;
+  height:100px;
+  
+}
+
+footer p {
+  font-size: 20px;
+  margin: 0.25rem 0;
+  color: #221133;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+/*palabras*/
+.container{
+	font-size:65vw;
+	color: red;
+	animation: 3s ease infinite corazon;
+	text-shadow: 4px 4px 25px rgba(255,0,0,0.6);
+}
+.container .contenido{
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align:center;
+	font-family: 'Galada',cursive;
+}
+.container .contenido h1{
+	font-size:100px;
+}
+.container .contenido p{
+	font-size:44px;
+}
+@keyframes corazon{
+	50%{
+		transform: scale(1.3);
+	}
+}
